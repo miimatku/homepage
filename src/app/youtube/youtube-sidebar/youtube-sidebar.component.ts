@@ -9,7 +9,7 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browse
 })
 export class YoutubeSidebarComponent {
     private videoList: any[] = [];
-    private selectedCategory: string = '';
+    private selectedCategory: string = 'music';
 
   constructor(private sanitizer: DomSanitizer, private youtubeService: YoutubeServiceService) { }
   
