@@ -1,0 +1,21 @@
+<div class="row youtube-div">
+    <div class="col-md-1">
+        <app-youtube-sidebar></app-youtube-sidebar>
+    </div>
+    <div class="col-md-11 youtube-comp-div">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<!-- <div class="youtube-div">
+    <input type="text" #input (keyup)="0">
+    <p #pee>{{ input.value | regexUrl }}</p>
+    <button type="button" class="btn btn-success" (click)="addVideoToList(pee.textContent)">Add Video</button>
+    <hr>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let video of videoList">
+            <div class="embed-responsive embed-responsive-16by9">
+                 <iframe width="640" height="390" class="embed-responsive-item" [src]="video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div> -->

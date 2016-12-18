@@ -1,0 +1,11 @@
+<div class="youtube-div">
+    <div class="row video-row">
+        <div class="col-md-4 video-div-col" *ngFor="let video of videoList">
+            <div class="video-div">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="586" height="351" class="embed-responsive-item" [src]="video | domSanitizer" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

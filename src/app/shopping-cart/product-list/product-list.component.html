@@ -1,0 +1,9 @@
+<div class="row row-eq-height comp">
+    <app-product-item 
+        class="col-sm-6 col-md-3" 
+        *ngFor="let product of products; let i = index" 
+        [product]="product"
+        [productId]="i">
+    </app-product-item>
+</div>
+

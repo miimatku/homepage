@@ -1,0 +1,18 @@
+.video-row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.video-div-col {
+    padding: 0;
+}
+
+.video-div {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    background-color: #222;
+    margin: 2px;
+}

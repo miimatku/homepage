@@ -1,0 +1,67 @@
+.list-div {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    max-width: 150px;
+}
+
+.item-a {
+    background-color: #222;
+    vertical-align: middle;
+    text-align: center;
+    color: #9d9d9d;
+    border: none;
+    margin-bottom: 2px;
+    border-radius: 10px; 
+}
+
+.item-a:active {
+    background-color: #C0B283; 
+}
+
+.list-group-item:hover {
+    background-color: black;
+}
+
+.list-group-item:focus {
+    background-color: #C0B283;
+}
+
+.list-group-item:active {
+    background-color: #C0B283;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .list-div {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.item-a {
+    background-color: #222;
+    vertical-align: middle;
+    text-align: center;
+    color: #9d9d9d;
+    border: none;
+    margin-bottom: 2px;
+    border-radius: 10px; 
+}
+
+.item-a:active {
+    background-color: #C0B283; 
+}
+
+.list-group-item:hover {
+    background-color: black;
+}
+
+.list-group-item:focus {
+    background-color: #C0B283;
+}
+
+.list-group-item:active {
+    background-color: #C0B283;
+}
+ }
+

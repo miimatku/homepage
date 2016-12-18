@@ -1,0 +1,24 @@
+<div class="small-screen">
+    <div class="list-group list-div" id="bs-example-navbar-collapse-1">
+    <button class="item-a hidden-lg hidden-md" data-toggle="collapse" data-target="#links">Categories</button>
+    <div id="links" class="collapse">
+        <a class="list-group-item item-a" [routerLink]="['music']" routerLinkActive="active" (click)="onSelectCategory('music')">Music</a>
+        <a class="list-group-item item-a" [routerLink]="['sport']" routerLinkActive="active" (click)="onSelectCategory('sport')">Sport</a>
+        <a class="list-group-item item-a" [routerLink]="['funny']" routerLinkActive="active" (click)="onSelectCategory('funny')">Funny</a>
+        <a class="list-group-item item-a" [routerLink]="['other']" routerLinkActive="active" (click)="onSelectCategory('other')">Other</a>
+        <a *ngIf="selectedCategory" class="list-group-item item-a visible-lg visible-md" (click)="onStore()">Save List</a>
+        <a *ngIf="selectedCategory" class="list-group-item item-a visible-lg visible-md" (click)="onFetch()">Get List</a>
+    </div>
+    <a class="list-group-item item-a visible-lg visible-md" [routerLink]="['music']" routerLinkActive="active" (click)="onSelectCategory('music')">Music</a>
+    <a class="list-group-item item-a visible-lg visible-md" [routerLink]="['sport']" routerLinkActive="active" (click)="onSelectCategory('sport')">Sport</a>
+    <a class="list-group-item item-a visible-lg visible-md" [routerLink]="['funny']" routerLinkActive="active" (click)="onSelectCategory('funny')">Funny</a>
+    <a class="list-group-item item-a visible-lg visible-md" [routerLink]="['other']" routerLinkActive="active" (click)="onSelectCategory('other')">Other</a>
+    <a *ngIf="selectedCategory" class="list-group-item item-a visible-lg visible-md" (click)="onStore()">Save List</a>
+    <a *ngIf="selectedCategory" class="list-group-item item-a visible-lg visible-md" (click)="onFetch()">Get List</a>
+    </div>
+    <div class="list-div form-group ">
+      <input class="form-control" type="text" #input (keyup)="0" placeholder="url">
+      <p #pee>{{ input.value | regexUrl }}</p>
+      <button type="button" class="btn btn-success form-control" (click)="addVideoToList(pee.textContent)"><span>Add Video</span></button>
+    </div>
+</div>
